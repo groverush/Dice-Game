@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="message">Player 1 Turn</h1>
+      <div class="players">
+        <div id="player1">
+          <h1>
+            Score:
+            <span id="player1Scoreboard">0</span>
+          </h1>
+          <div id="player1Dice" class="dice active">-</div>
+        </div>
+        <div id="player2">
+          <h1>
+            Score:
+            <span id="player2Scoreboard">0</span>
+          </h1>
+          <div id="player2Dice" class="dice">-</div>
+        </div>
+      </div>
+
+      <button id="rollBtn">Roll Dice 🎲</button>
+      <button id="resetBtn">Reset Game 🔁</button>
+      <label for="checkbox">Double Points?</label>
+      <input id="double" type="checkbox" />
+    </div>
+
+    <div class="previous-games">
+      <h3>Previous Victories</h3>
+      <span class="prev-victories-p1">
+        Victories P1 = <span id="victories-p1">0</span>
+      </span>
+      <span class="prev-victories-p2">
+        Victories P2 = <span id="victories-p2">0</span>
+      </span>
+      <button id="reset-victories">Reset Victories</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- This is a dice game I did with HTML, CSS and JavaScript. In this exercise I learned and reinforced my knowledge about local storage and DOM manipulation. -->

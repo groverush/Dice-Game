@@ -1,0 +1,125 @@
+html,
+body {
+  --color-1: #264653;
+  --color-2: #2a9d8f;
+  --color-3: #f6aa1c;
+  --color-4: #f4a261;
+  --color-5: #6a4c93;
+  --color-6: #ffafcc;
+  --color-7: #bde0fe;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5vh 0;
+  background: linear-gradient(-145deg, var(--color-4), var(--color-5));
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  color: white;
+  text-shadow: 3px 3px 1px black;
+}
+
+.container {
+  width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(90deg, var(--color-1), var(--color-5));
+  box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+  padding: 50px;
+  border-radius: 3%;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-3);
+  margin: 0 auto;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 20px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+}
+
+#rollBtn {
+  background-color: var(--color-2);
+}
+
+#resetBtn {
+  background-color: var(--color-4);
+}
+
+#resetBtn {
+  display: none;
+}
+#rollBtn:hover {
+  background-color: #8ac926;
+}
+
+#resetBtn:hover {
+  background-color: #ff5400;
+}
+.active {
+  box-shadow: -2px 6px 18px 3px rgba(14, 215, 37, 0.75);
+}
+.winner {
+  box-shadow: -2px 6px 18px 3px rgba(15, 196, 220, 0.75);
+}
+.loser {
+  box-shadow: -2px 6px 18px 3px rgba(250, 4, 4, 0.75);
+}
+label {
+  padding: 8px;
+  display: block;
+}
+.previous-games {
+  width: 350px;
+  margin: 0 auto;
+  padding: 1em 0 0;
+  text-align: center;
+}
+.previous-games > .prev-victories-p1,
+.previous-games > .prev-victories-p2 {
+  width: 120px;
+  padding: 12px 20px;
+  text-shadow: 0 0 1px;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.prev-victories-p1 {
+  background-color: var(--color-6);
+  margin-right: 10px;
+}
+.prev-victories-p2 {
+  background-color: var(--color-7);
+  margin-left: 10px;
+}
+#reset-victories {
+  background-color: #fff3b0;
+  color: black;
+}
+#reset-victories:hover {
+  background-color: #e36414;
+}
+h3 {
+  line-height: 2;
+}
